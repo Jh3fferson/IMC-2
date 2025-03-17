@@ -7,7 +7,7 @@ const imc = document.getElementById("imc");
 form.addEventListener("submit", function (event) {
 event.preventDefault();
 
-  let imc = peso.value / (altura.value * altura.value);
+  let imc = peso.value / ((altura.value/100) * (altura.value/100));
   const imcLabel = document.querySelector('#imc');
   let imcText;
   let color;
