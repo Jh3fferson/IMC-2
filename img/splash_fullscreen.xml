@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/cdv_splashscreen_background" />
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/splash_screen" 
+            android:antialias="true"
+            android:width="200dp"
+            android:height="200dp"/>
+    </item>
+</layer-list>
+    <!-- Imagem criada por juicy_fish - fonte: [https://www.flaticon.com/br/autores/juicy-fish] -->

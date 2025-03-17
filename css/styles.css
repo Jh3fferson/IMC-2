@@ -11,7 +11,7 @@ body{
     background-color: rgb(209, 255, 255);
     width: 100%;
     height: 100vh;
-    border: solid 10px;
+    border: solid 10px rgb(12, 110, 86);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ color: white;
 }
 
 #imcText{
-    margin: 1em;
+    margin-bottom: 2em;
     color: black;
 }
 
@@ -127,7 +127,7 @@ color: white;
 .baixo{
     width: 92.5px;
     height: 20px;
-    background-color: rgb(219, 219, 0);
+    background-color: rgb(5, 87, 112);
     position: absolute;
     top: 0;
 }
@@ -142,7 +142,7 @@ color: white;
 .sobre{
     width: 25px;
     height: 20px;
-    background-color: rgb(241, 164, 21);
+    background-color: rgb(219, 219, 0);
     position: absolute;
     top: 0;
     left: 125px;
@@ -150,7 +150,7 @@ color: white;
 .obsidadeI{
     width: 25px;
     height: 20px;
-    background-color: rgb(255, 69, 0);
+    background-color: rgb(241, 164, 21);
     position: absolute;
     top: 0;
     left: 150px;
@@ -158,7 +158,7 @@ color: white;
 .obsidadeII{
     width: 25px;
     height: 20px;
-    background-color: rgb(255, 17, 0);
+    background-color: rgb(189, 25, 25);
     position: absolute;
     top: 0;
     left: 175px;
@@ -166,15 +166,17 @@ color: white;
 .obsidadeIII{
     width: 50px;
     height: 20px;
-    background-color: black;
+    background-color: rgb(116, 14, 6);
     position: absolute;
     top: 0;
     left: 200px;
 }
 .seta{
-    width: 5px;
-    height: 20px;
-    background-color: #8a8a8a;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid rgb(0, 0, 0);
     position: absolute;
-    top: 0;
+    top: -10px;
 }
