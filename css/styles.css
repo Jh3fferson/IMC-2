@@ -4,17 +4,18 @@ input[type="number"]::-webkit-outer-spin-button{
     -webkit-appearance: none;
     margin: 0;
 }
-input[type="number"]{
-    -moz-appearance: textfield;
-}
 
 body{
     margin: 0;
     padding: 0;
     background-color: rgb(209, 255, 255);
-    width: 99%;
-    height: 99vh;
-    border: solid 2px;
+    width: 100%;
+    height: 100vh;
+    border: solid 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header{
@@ -31,23 +32,35 @@ main{
     justify-content: center;
 }
 
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgb(18, 46, 71);
+    color: white;
+    height: 6em;
+    width: 20em;
+}
+
 .altura-peso{
     margin-top: 2px;
     margin-left: 0;
     margin-right: 0;
-    border: solid 2px black;
     height: 2em;
     width: 20em;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
-    border-radius: 10px;
-    background-color: aliceblue;
-
+    gap: 5px;
 }
+
 .altura-peso input{
 border-radius: 5px;
+background-color: rgb(83, 83, 97);
+color: white;
 }
 
 #button{
@@ -66,36 +79,59 @@ border-radius: 5px;
     color: white;
 }
 
-#imc-div{
+#imc{
+    margin-top: 1em;
+    width: 20em;
+    height: 10em;
     display: none;
-    height: 3em;
-    width: 250px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    background-color: white;
+    border: solid 2px;
+    border-radius: 25px;
+    position: relative;
 }
 
-#imc{
+#close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: rgb(223, 83, 83);
+    color: white;
+}
+
+#imcText-div{
+    height: 3em;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imcText{
     margin: 1em;
     color: black;
 }
 
 .barra{
-    display: none;
+    display: block;
     width: 250px;
     height: 20px;
     background-color: #ccc;
     position: relative;
     border: solid 2px #8a8a8a;
 }
-.amarelo{
+.baixo{
     width: 92.5px;
     height: 20px;
     background-color: rgb(219, 219, 0);
     position: absolute;
     top: 0;
 }
-.verde{
+.ideal{
     width: 32.5px;
     height: 20px;
     background-color: rgb(122, 201, 122);
@@ -103,7 +139,7 @@ border-radius: 5px;
     top: 0;
     left: 92.5px;
 }
-.laranja{
+.sobre{
     width: 25px;
     height: 20px;
     background-color: rgb(241, 164, 21);
@@ -111,7 +147,7 @@ border-radius: 5px;
     top: 0;
     left: 125px;
 }
-.laranja-esc{
+.obsidadeI{
     width: 25px;
     height: 20px;
     background-color: rgb(255, 69, 0);
@@ -119,7 +155,7 @@ border-radius: 5px;
     top: 0;
     left: 150px;
 }
-.vermelho{
+.obsidadeII{
     width: 25px;
     height: 20px;
     background-color: rgb(255, 17, 0);
@@ -127,7 +163,7 @@ border-radius: 5px;
     top: 0;
     left: 175px;
 }
-.preto{
+.obsidadeIII{
     width: 50px;
     height: 20px;
     background-color: black;

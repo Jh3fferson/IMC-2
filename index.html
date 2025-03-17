@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>Calculo de IMC</h1>
@@ -13,33 +15,39 @@
     <main>
         <div>
             <form id="form">
-                <div class="altura-peso">
-                    <label for="altura">Altura (Cm):</label>
-                    <input type="number" id="altura" placeholder="Digite a sua altura..." name="altura" required>
-                </div>
-                <div class="altura-peso">
-                    <label for="peso">Peso (Kg):</label>
-                    <input type="number" id="peso" placeholder="Digite o seu peso..." name="peso" required>
+                <div id="inputs">
+                    <div class="altura-peso">
+                        <label for="altura">Altura (Cm):</label>
+                        <input type="number" id="altura" placeholder="Digite a sua altura..." name="altura" required>
+                    </div>
+                    <div class="altura-peso">
+                        <label for="peso">Peso (Kg):</label>
+                        <input type="number" id="peso" placeholder="Digite o seu peso..." name="peso" required>
+                    </div>
                 </div>
                 <div id="button">
                     <input type="submit" value="Enviar">
                 </div>
             </form>
         </div>
-        <div id="imc-div">
-            <span id="imc"></span>
-        </div>
-        <div class="barra">
-            <div class="amarelo"></div>
-            <div class="verde"></div>
-            <div class="laranja"></div>
-            <div class="laranja-esc"></div>
-            <div class="vermelho"></div>
-            <div class="preto"></div>
-            <div class="seta"></div>
+        <div id="imc">
+            <button id="close" onclick="closeImc(event)">X</button>
+            <div id="imcText-div">
+                <span id="imcText">dqwdfq wefwe fwefaw egaweg esger sgesg ersgr egre</span>
+            </div>
+            <div class="barra">
+                <div class="baixo"></div>
+                <div class="ideal"></div>
+                <div class="sobre"></div>
+                <div class="obsidadeI"></div>
+                <div class="obsidadeII"></div>
+                <div class="obsidadeIII"></div>
+                <div class="seta"></div>
+            </div>
         </div>
     </main>
     <footer></footer>
-    <script src="js/script.js"></script>  
+    <script src="js/script.js"></script>
 </body>
+
 </html>
